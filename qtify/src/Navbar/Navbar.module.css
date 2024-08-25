@@ -1,0 +1,26 @@
+.navbar {
+    background-color: var(--color-primary);
+    height: 74px;
+    width: 100vw;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-btn {
+    background-color: var(--css-black);
+    color: var(--css-primary);
+    font-size: 18px;
+    font-weight: 600;
+    width: 169px;
+    height: 46px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover {
+    color: var(--css-white);
+  }
