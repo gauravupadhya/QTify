@@ -7,7 +7,6 @@ import Box from '@mui/material/Box';
 import styles from "../BasicTabs/BasicTabs.module.css";
 import { useState } from 'react';
 
-// CustomTabPanel Component
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -34,7 +33,6 @@ CustomTabPanel.propTypes = {
     value: PropTypes.number.isRequired,
 };
 
-// AllyProps function for accessibility
 function allyProps(index) {
     return {
         id: `simple-tab-${index}`,
@@ -42,14 +40,12 @@ function allyProps(index) {
     };
 }
 
-// BasicTabs Component
 export default function BasicTabs({ filteredData }) {
     const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         filteredData(newValue);
         setValue(newValue);
-        // console.log('new value is ' + newValue);
     };
 
     return (
